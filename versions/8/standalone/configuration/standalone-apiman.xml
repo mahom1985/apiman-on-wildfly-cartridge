@@ -400,7 +400,7 @@
         <kc:credential name="secret">
           password
         </kc:credential>
-        <kc:enable-basic-auth>false</kc:enable-basic-auth>
+        <kc:enable-basic-auth>true</kc:enable-basic-auth>
       </kc:secure-deployment>
       <kc:secure-deployment xmlns:kc="urn:jboss:domain:keycloak:1.0" name="apimanui.war">
         <kc:realm>apiman</kc:realm>
@@ -408,7 +408,6 @@
         <kc:credential name="secret">
           password
         </kc:credential>
-        <kc:enable-basic-auth>false</kc:enable-basic-auth>
       </kc:secure-deployment>
       <kc:secure-deployment xmlns:kc="urn:jboss:domain:keycloak:1.0" name="apiman-gateway-api.war">
         <kc:realm>apiman</kc:realm>
@@ -416,7 +415,7 @@
         <kc:credential name="secret">
           password
         </kc:credential>
-        <kc:enable-basic-auth>false</kc:enable-basic-auth>
+        <kc:enable-basic-auth>true</kc:enable-basic-auth>
       </kc:secure-deployment>
     </subsystem>
   </profile>
