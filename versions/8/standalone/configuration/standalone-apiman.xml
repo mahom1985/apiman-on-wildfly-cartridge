@@ -387,7 +387,7 @@
     </subsystem>
     <subsystem xmlns="urn:jboss:domain:weld:2.0" />
     <subsystem xmlns="urn:jboss:domain:keycloak:1.0">
-      <kc:realm xmlns:kc="urn:jboss:domain:keycloak:1.0" name="accelerator">
+      <kc:realm xmlns:kc="urn:jboss:domain:keycloak:1.0" name="apiman">
         <kc:realm-public-key>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhetRKqUw/8/U6JxcVHzCkYu6rKV7t3OAExmdYT8E49t9iNDNaSSDhO0yU6qga7nN73Tylqv3btXN8AUhdaT5wqcg/sPkatmodValOpUBUAy/JboKte+z2TmJy1cmhfO/GvKi2GXMTyyFrl8MNjK8NSuzZyD54BkMJXQFzKXZX2ozlMup9et2OEC9V7Xldan1dZYjn/bqhC16ov6BIiZYlnVnas+39RDw9HOhIVY83sPQbbS3a/kCISnzCF6JcEdaWnUclUPvvk4tAiH6iVCrU6ytOL78qgdNJR9K51KPt2oiyXdva+JCet7MI/Ve9B1z8a4ZckexJURX26aJKPBm2wIDAQAB</kc:realm-public-key>
         <kc:auth-server-url>https://dib.software.dell.com/auth</kc:auth-server-url>
         <kc:ssl-required>none</kc:ssl-required>
@@ -395,7 +395,7 @@
         <kc:principal-attribute>preferred_username</kc:principal-attribute>
       </kc:realm>
       <kc:secure-deployment xmlns:kc="urn:jboss:domain:keycloak:1.0" name="apiman.war">
-        <kc:realm>apiman</kc:realm>
+        <kc:realm>accelerator</kc:realm>
         <kc:resource>apiman</kc:resource>
         <kc:credential name="secret">
           password
