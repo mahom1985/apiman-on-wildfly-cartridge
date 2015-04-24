@@ -1,0 +1,132 @@
+04-22 12:27:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "APPLICATION_VERSIONS" not found; SQL statement:
+alter table application_versions drop constraint FK_i2d88hsgy9siaafrf926b4pp6 if exists [42102-168]
+04-22 12:27:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "APPLICATIONS" not found; SQL statement:
+alter table applications drop constraint FK_nlj9eihpqnwxn5c2385y6hg8g if exists [42102-168]
+04-22 12:27:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "CONTRACTS" not found; SQL statement:
+alter table contracts drop constraint FK_6h06sgs4dudh1wehmk0us973g if exists [42102-168]
+04-22 12:27:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "CONTRACTS" not found; SQL statement:
+alter table contracts drop constraint FK_nyw8xu6m8cx4rwwbtrxbjneui if exists [42102-168]
+04-22 12:27:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "CONTRACTS" not found; SQL statement:
+alter table contracts drop constraint FK_8o6t1f3kg96rxy5uv51f6k9fy if exists [42102-168]
+04-22 12:27:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "PD_TEMPLATES" not found; SQL statement:
+alter table pd_templates drop constraint FK_prbnn7j7m6m3pxt2dsn9gwlw8 if exists [42102-168]
+04-22 12:27:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "PERMISSIONS" not found; SQL statement:
+alter table permissions drop constraint FK_sq51ihfrapwdr98uufenhcocg if exists [42102-168]
+04-22 12:27:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "PLAN_VERSIONS" not found; SQL statement:
+alter table plan_versions drop constraint FK_rjp9ytrw1o5jq2bn034844qmk if exists [42102-168]
+04-22 12:27:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "PLANS" not found; SQL statement:
+alter table plans drop constraint FK_918ai8n5wkp4k6jr1k5selmfj if exists [42102-168]
+04-22 12:27:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "POLICIES" not found; SQL statement:
+alter table policies drop constraint FK_l4q6we1bos1yl9unmogei6aja if exists [42102-168]
+04-22 12:27:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "SERVICE_DEFS" not found; SQL statement:
+alter table service_defs drop constraint FK_b800diwqq4958l0i67bl7momv if exists [42102-168]
+04-22 12:27:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "SERVICE_VERSIONS" not found; SQL statement:
+alter table service_versions drop constraint FK_2hn0ec7u04iu5dqythleuykqm if exists [42102-168]
+04-22 12:27:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "SERVICES" not found; SQL statement:
+alter table services drop constraint FK_bbw8tg544g6n2w8n1w4tu29w4 if exists [42102-168]
+04-22 12:27:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "SVC_GATEWAYS" not found; SQL statement:
+alter table svc_gateways drop constraint FK_p5dm3cngljt6yrsnvc7uc6a75 if exists [42102-168]
+04-22 12:27:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "SVC_PLANS" not found; SQL statement:
+alter table svc_plans drop constraint FK_t7uvfcsswopb9kh8wpa86blqr if exists [42102-168]
+04-22 12:27:04 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Sequence "HIBERNATE_SEQUENCE" not found; SQL statement:
+drop sequence hibernate_sequence [90036-168]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.ddl.DropSequence.update(DropSequence.java:45)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:75)
+	at org.h2.command.Command.executeUpdate(Command.java:230)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:125)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:110)
+	at org.apache.commons.dbcp.DelegatingStatement.executeUpdate(DelegatingStatement.java:228)
+	at org.apache.commons.dbcp.DelegatingStatement.executeUpdate(DelegatingStatement.java:228)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:64)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.perform(SchemaExport.java:418)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:372)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:304)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:293)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:517)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1859)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:852)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:845)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:398)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:844)
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:75)
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:54)
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+	at io.apiman.manager.api.jpa.EntityManagerFactoryAccessor.postConstruct(EntityManagerFactoryAccessor.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.jboss.weld.util.reflection.SecureReflections$13.work(SecureReflections.java:267)
+	at org.jboss.weld.util.reflection.SecureReflectionAccess.run(SecureReflectionAccess.java:52)
+	at org.jboss.weld.util.reflection.SecureReflectionAccess.runAsInvocation(SecureReflectionAccess.java:137)
+	at org.jboss.weld.util.reflection.SecureReflections.invoke(SecureReflections.java:263)
+	at org.jboss.weld.introspector.jlr.WeldMethodImpl.invoke(WeldMethodImpl.java:168)
+	at org.jboss.weld.bean.AbstractClassBean.defaultPostConstruct(AbstractClassBean.java:403)
+	at org.jboss.weld.bean.ManagedBean$ManagedBeanInjectionTarget.postConstruct(ManagedBean.java:178)
+	at org.jboss.weld.bean.ManagedBean.create(ManagedBean.java:298)
+	at org.jboss.weld.context.AbstractContext.get(AbstractContext.java:103)
+	at org.jboss.weld.bean.proxy.ContextBeanInstance.getInstance(ContextBeanInstance.java:90)
+	at org.jboss.weld.bean.proxy.ProxyMethodHandler.invoke(ProxyMethodHandler.java:79)
+	at io.apiman.manager.api.jpa.EntityManagerFactoryAccessor$Proxy$_$$_WeldClientProxy.getEntityManagerFactory(EntityManagerFactoryAccessor$Proxy$_$$_WeldClientProxy.java)
+	at io.apiman.manager.api.jpa.AbstractJpaStorage.beginTx(AbstractJpaStorage.java:72)
+	at io.apiman.manager.api.jpa.roles.JpaIdmStorage.createUser(JpaIdmStorage.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.jboss.weld.bean.proxy.AbstractBeanInstance.invoke(AbstractBeanInstance.java:45)
+	at org.jboss.weld.bean.proxy.ProxyMethodHandler.invoke(ProxyMethodHandler.java:105)
+	at org.jboss.weld.proxies.IIdmStorage$-1111430440$Proxy$_$$_WeldClientProxy.createUser(IIdmStorage$-1111430440$Proxy$_$$_WeldClientProxy.java)
+	at io.apiman.manager.test.server.DefaultTestDataSeeder.seed(DefaultTestDataSeeder.java:44)
+	at io.apiman.manager.test.server.DatabaseSeedFilter.init(DatabaseSeedFilter.java:55)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:719)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:710)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:172)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:280)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at io.apiman.manager.test.server.ManagerApiTestServer.start(ManagerApiTestServer.java:110)
+	at io.apiman.manager.test.util.AbstractTestPlanTest.startServer(AbstractTestPlanTest.java:104)
+	at io.apiman.manager.test.util.AbstractTestPlanTest.setup(AbstractTestPlanTest.java:41)
+	at io.apiman.distro.db.CreateH2DatabaseTest.setup(CreateH2DatabaseTest.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:24)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
