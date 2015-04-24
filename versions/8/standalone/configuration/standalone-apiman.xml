@@ -395,7 +395,7 @@
         <kc:principal-attribute>preferred_username</kc:principal-attribute>
       </kc:realm>
       <kc:secure-deployment xmlns:kc="urn:jboss:domain:keycloak:1.0" name="apiman.war">
-        <kc:realm>accelerator</kc:realm>
+        <kc:realm>apiman</kc:realm>
         <kc:resource>apiman</kc:resource>
         <kc:credential name="secret">
           password
@@ -403,14 +403,14 @@
         <kc:enable-basic-auth>true</kc:enable-basic-auth>
       </kc:secure-deployment>
       <kc:secure-deployment xmlns:kc="urn:jboss:domain:keycloak:1.0" name="apimanui.war">
-        <kc:realm>accelerator</kc:realm>
+        <kc:realm>apiman</kc:realm>
         <kc:resource>apimanui</kc:resource>
         <kc:credential name="secret">
           password
         </kc:credential>
       </kc:secure-deployment>
       <kc:secure-deployment xmlns:kc="urn:jboss:domain:keycloak:1.0" name="apiman-gateway-api.war">
-        <kc:realm>accelerator</kc:realm>
+        <kc:realm>apiman</kc:realm>
         <kc:resource>apiman-gateway-api</kc:resource>
         <kc:credential name="secret">
           password
