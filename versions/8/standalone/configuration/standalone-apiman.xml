@@ -392,6 +392,7 @@
         <kc:auth-server-url>https://dib.software.dell.com/auth</kc:auth-server-url>
         <kc:ssl-required>none</kc:ssl-required>
         <kc:enable-cors>false</kc:enable-cors>
+        <kc:disable-trust-manager>true</kc:disable-trust-manager>
         <kc:principal-attribute>preferred_username</kc:principal-attribute>
       </kc:realm>
       <kc:secure-deployment xmlns:kc="urn:jboss:domain:keycloak:1.0" name="apiman.war">
