@@ -400,24 +400,24 @@
         <kc:resource>apiman</kc:resource>
         <kc:disable-trust-manager>true</kc:disable-trust-manager>
         <kc:credential name="secret">
-          password
+          password1
         </kc:credential>
         <kc:enable-basic-auth>true</kc:enable-basic-auth>
       </kc:secure-deployment>
       <kc:secure-deployment xmlns:kc="urn:jboss:domain:keycloak:1.0" name="apimanui.war">
         <kc:realm>apiman</kc:realm>
-        <kc:resource>apimanui</kc:resource>
+        <kc:resource>apiman</kc:resource>
         <kc:disable-trust-manager>true</kc:disable-trust-manager>
         <kc:credential name="secret">
-          password
+          password2
         </kc:credential>
       </kc:secure-deployment>
       <kc:secure-deployment xmlns:kc="urn:jboss:domain:keycloak:1.0" name="apiman-gateway-api.war">
         <kc:realm>apiman</kc:realm>
-        <kc:resource>apiman-gateway-api</kc:resource>
+        <kc:resource>apiman</kc:resource>
         <kc:disable-trust-manager>true</kc:disable-trust-manager>
         <kc:credential name="secret">
-          password
+          password3
         </kc:credential>
         <kc:enable-basic-auth>true</kc:enable-basic-auth>
       </kc:secure-deployment>
