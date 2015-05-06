@@ -52,7 +52,7 @@ touch ${OPENSHIFT_WILDFLY_DIR}/env/OPENSHIFT_WILDFLY_CLUSTER
 
 # Install Oracle JDK 8 (this should be removed once OpenShift provides support for JDK 8)
 pushd $OPENSHIFT_WILDFLY_DIR/usr/lib/jvm > /dev/null
-    if wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u45-b13/jdk-8u45-linux-i586.tar.gz > /dev/null; then
+    if wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" https://s3-us-west-2.amazonaws.com/dsgp-repo/java/jdk-8u45-linux-i586.gz > /dev/null; then
         tar -xzf jdk-8u45-linux-i586.tar.gz
         rm jdk-8u45-linux-i586.tar.gz
         update-configuration java8
